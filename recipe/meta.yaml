@@ -1,5 +1,5 @@
 {% set name = "sharrow" %}
-{% set version = "1.0.6" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sharrow-{{ version }}.tar.gz
-  sha256: 6e9e0cf366ac3654a04207459fb2a4d01add5c8cd387b3884eea17e70d1d6394
+  sha256: c1b9ead6efbe79faef2ed64f07cb88829216c289f7ad8970be1709b9d4aeb59e
 
 build:
   noarch: python
@@ -43,7 +43,7 @@ about:
   home: https://github.com/ActivitySim/sharrow
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'A compiler for ActivitySim-style utility specification files'
+  summary: A compiler for ActivitySim-style utility specification files
 
 extra:
   recipe-maintainers:
