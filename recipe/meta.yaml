@@ -1,5 +1,5 @@
 {% set name = "sharrow" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sharrow-{{ version }}.tar.gz
-  sha256: d8411f5785e487f680068738b89a96ca952f41c265e4bf002cd05698ed0fe37f
+  sha256: 2f267b4c80ebf9594d28f380ac5fcd9d85e83c04eacdfd56caba2612b8dfe072
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - pyarrow >=3.0.0
     - python >=3.9
     - xarray >=0.20.0
+    - sparse
 
 test:
   imports:
