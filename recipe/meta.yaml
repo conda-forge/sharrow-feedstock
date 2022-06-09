@@ -30,6 +30,7 @@ requirements:
     - pyarrow >=3.0.0
     - python >=3.9
     - xarray >=0.20.0
+    - sparse
 
 test:
   imports:
