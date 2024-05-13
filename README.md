@@ -145,6 +145,3 @@ Feedstock Maintainers
 
 * [@jpn--](https://github.com/jpn--/)
 
-
-<!-- dummy commit to enable rerendering -->
-
