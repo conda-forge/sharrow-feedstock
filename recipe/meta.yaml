@@ -1,5 +1,5 @@
 {% set name = "sharrow" %}
-{% set version = "2.14.0" %}
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sharrow-{{ version }}.tar.gz
-  sha256: d0d2afadd0b6a9f6c0b3ef6e602262c5f6c31bf33090865db555bae566217df4
+  sha256: d4e6881f8abfe0719b009963c491285d14c61226c64382ded16b3ce3d6f232fe
 
 build:
   noarch: python
