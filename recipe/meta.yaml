@@ -12,12 +12,12 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7,!=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
   run:
@@ -29,7 +29,7 @@ requirements:
     - numpy >=1.19
     - pandas >=1.2
     - pyarrow >=3.0.0
-    - python >=3.9
+    - python >={{ python_min }}
     - xarray >=0.20.0
     - sparse
 
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ActivitySim/sharrow
